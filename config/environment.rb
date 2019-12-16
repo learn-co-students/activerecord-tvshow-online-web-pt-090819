@@ -15,3 +15,6 @@ DB = ActiveRecord::Base.establish_connection({
 if ENV["ACTIVE_RECORD_ENV"] == "test"
   ActiveRecord::Migration.verbose = false
 end
+
+require_relative '../models/app/show'
+require_relative '../models/app/shows_controller'
